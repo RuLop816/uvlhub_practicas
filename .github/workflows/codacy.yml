@@ -86,6 +86,9 @@ jobs:
           --health-retries=3
 
     steps:
+      - name: Checkout code
+        uses: actions/checkout@v5
+
       - uses: pypa/gh-action-pip-audit@v1.1.0
         with:
           inputs: requirements.txt
