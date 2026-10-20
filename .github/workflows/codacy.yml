@@ -44,6 +44,7 @@ jobs:
 
     - name: Verify dependencies version
       run: |
+        pip install pip-review
         pip-review
 
     - name: Run tests with coverage
